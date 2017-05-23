@@ -1,0 +1,40 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages:['wordtree']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable(
+      [ ['Phrases'],
+['if @USCongress_GTA doesnt Act Soon Summer is Coming & even Roman Empire only lasted 300 years USA is 270ish ehh? Rot within & Barbarians '],
+['If #Christ were alive today hed be jailed in #GuantanamoBay. He was executed by the Roman Empire - a system now exemplified by the USA.'],
+['If #indyref2 goes ahead can Donald Trump get the Mexicans to raise and thicken Hadrians wall'],
+['If 2016 US election = The Fall Of the Roman Empire then Trump = Caligula!Roman Empire Trump'],
+['If after Brexit Scotland gains independence & joins EU well need to rebuild Hadrians Wall (a la Trump) to keep EU hordes from invading'],
+['If America = Roman Empire in decline\nthen @GOP = barbarians at the gate...and Trump just kicked the gate down.'],
+['If America is currently mimicking the fall of the Roman Empire is Trump potentially the new Nero? #Trump'],
+['If America is like the Roman Empire then Trump is our version of Nero'],
+['If America is like the Roman Empire Trump is our Nero'],
+['If America is the new Roman empire then if elected Trump could be the new Nero #GOPDebate #Trump #endofdays'],
+['If America is the new Roman Empire then Trump is the equivalent of Nero...\n\n@eddieizzard'],
+['If America is the Roman Empire then Trump would probably be Emperor Nero.'],
+['If America is The Roman Empire Trump is Tiberius Caesar Tillerson is Pontius Pilate Putin is King Herod the... http://fb.me/8oSKtyE2g '],
+['If Donald Trump becomes president I bet it will be like the exact moment the Roman Empire started to fall. #endoftheempire'],
+['If Hillary wins no legitable person will ever be in the White House again.Roman Empire fell because of immorality&corruption so will USA.']
+]
+);
+
+    var options = {
+      wordtree: {
+        format: 'implicit',
+        word: 'cats'
+      }
+    };
+
+    var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+    chart.draw(data, options);
+  }
+</script>
+<body>
+<div id="wordtree_basic" style="width: 900px; height: 500px;"></div>
+</body>
